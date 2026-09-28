@@ -1,0 +1,21 @@
+{
+  "id": "steampunk-train-scenes",
+  "title": "steampunk train carts",
+  "description": "Five wide, three-row steampunk train-car scenes for Foundry VTT v13: passenger, sleeper, dining, freight, and armored vault. Includes preconfigured walls, doors, lighting, train ambience, and a GM scene importer.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Nathan Martinez"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.350"
+  },
+  "esmodules": [
+    "scripts/importer.mjs"
+  ],
+  "url": "https://github.com/nathan135790/steampunk-train-maps",
+  "manifest": "https://raw.githubusercontent.com/nathan135790/steampunk-train-maps/main/module.json",
+  "download": "https://github.com/nathan135790/steampunk-train-maps/releases/download/v1.0.0/steampunk-train-scenes.zip"
+}
