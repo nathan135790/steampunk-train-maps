@@ -1,0 +1,23 @@
+{
+  "id": "steampunk-train-scenes",
+  "title": "Steampunk Train: Five Ready-to-Play Scenes",
+  "description": "Five wide steampunk train-car battlemaps with v13 walls, locked vault doors, lantern lights and ambient sound. GM can import with one click.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.350"
+  },
+  "authors": [
+    {
+      "name": "DND Campaign Map Toolkit"
+    }
+  ],
+  "esmodules": [
+    "scripts/importer.mjs"
+  ],
+  "languages": [],
+  "relationships": {
+    "systems": [],
+    "requires": []
+  }
+}
