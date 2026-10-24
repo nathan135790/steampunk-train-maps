@@ -1,0 +1,97 @@
+{
+  "name": "Sira Vell",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/14d542ccbad4369d.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 26,
+        "max": 26,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 1,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Elemental Keeper</h2><p>Responsible for the unstable blue elemental containment engine.</p><p><strong>Assigned carriage:</strong> Elemental Tender.</p><h3>Action</h3><p>Containment Pulse: DC 13 Dexterity save, 2d6 cold.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Elemental Keeper",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Containment Pulse: DC 13 Dexterity save, 2d6 cold.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sira Vell",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/14d542ccbad4369d.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "14d542ccbad4369d",
+      "carId": "tender",
+      "role": "Elemental Keeper",
+      "npcVersion": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Nessa Bramble",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/bda095f8265f7d96.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12
+      },
+      "hp": {
+        "value": 18,
+        "max": 18,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.25,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Potion Vendor</h2><p>Her colorful tonics are potent, and not always predictable.</p><p><strong>Assigned carriage:</strong> Market and General Store Car.</p><h3>Action</h3><p>Acid Flask: ranged +4 to hit, 1d6 acid.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Potion Vendor",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Acid Flask: ranged +4 to hit, 1d6 acid.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Nessa Bramble",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/bda095f8265f7d96.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "bda095f8265f7d96",
+      "carId": "market",
+      "role": "Potion Vendor",
+      "npcVersion": 1
+    }
+  }
+}

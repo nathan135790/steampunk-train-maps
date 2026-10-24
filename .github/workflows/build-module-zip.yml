@@ -1,0 +1,96 @@
+name: Build Foundry module ZIP
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: foundry-module-zip-main
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Validate source and build installable module archive
+        shell: bash
+        run: |
+          python3 - <<'PYTHON'
+          import json, pathlib, zipfile
+          source = pathlib.Path('steampunk-train-scenes')
+          public = json.loads(pathlib.Path('module.json').read_text(encoding='utf-8'))
+          bundled = json.loads((source/'module.json').read_text(encoding='utf-8'))
+          assert public == bundled, 'Root and packaged module.json differ'
+          assert public['id'] == source.name, 'Module ID must match folder name'
+          assert public.get('version'), 'Missing module version'
+          for subdir, suffix, expected in [
+              ('scenes', '.json', 15), ('maps', '.webp', 15),
+              ('actors', '.json', 41), ('art/tokens', '.webp', 40)
+          ]:
+              items = list((source/subdir).glob('*'+suffix))
+              assert len(items) == expected, f'{subdir}: found {len(items)}, expected {expected}'
+          assert (source/'audio/moving-train-loop.ogg').is_file(), 'Missing train audio'
+          actors = json.loads((source/'actors/index.json').read_text(encoding='utf-8'))
+          assert len(actors) == 40, 'Expected 40 actor index entries'
+          for npc in actors:
+              path = source/npc['path']
+              assert path.is_file(), f'Missing NPC: {path}'
+              actor = json.loads(path.read_text(encoding='utf-8'))
+              assert actor['flags']['steampunk-train-scenes']['npcId'] == npc['id']
+              token_path = source/'art/tokens'/f"{npc['id']}.webp"
+              assert token_path.is_file(), f'Missing token: {token_path}'
+          for path in (source/'scenes').glob('*.json'):
+              scene = json.loads(path.read_text(encoding='utf-8'))
+              bg = scene['background']['src']
+              assert bg.startswith('modules/steampunk-train-scenes/'), bg
+              assert (source/bg.split('modules/steampunk-train-scenes/',1)[1]).is_file(), bg
+              doors = [w for w in scene.get('walls', []) if w.get('door', 0)]
+              # No more than one connecting door on either end; internal doors are allowed.
+              for side in (150, 2850):
+                  end_doors = [w for w in doors if abs(w['c'][0]-side)<250 and abs(w['c'][2]-side)<250]
+                  assert len(end_doors) <= 1, f'{path}: multiple doors at end {side}'
+          zip_path = pathlib.Path('steampunk_train_foundry_v13.zip')
+          with zipfile.ZipFile(zip_path, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
+              for path in sorted(source.rglob('*')):
+                  if not path.is_file(): continue
+                  # Put module.json at the archive root (Foundry installer expects this).
+                  rel = path.relative_to(source)
+                  zi = zipfile.ZipInfo(str(rel), date_time=(2026,1,1,0,0,0))
+                  zi.compress_type = zipfile.ZIP_DEFLATED
+                  zi.external_attr = 0o644 << 16
+                  zf.writestr(zi, path.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+          with zipfile.ZipFile(zip_path) as zf:
+              assert 'module.json' in zf.namelist(), 'ZIP has no root manifest'
+              assert len(zf.namelist()) >= 110, 'ZIP missing files'
+          print(f'Built {zip_path} ({zip_path.stat().st_size:,} bytes) from {len(list(source.rglob("*")))} source paths')
+          PYTHON
+
+      - name: Upload ZIP as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: steampunk-train-scenes-${{ github.sha }}
+          path: steampunk_train_foundry_v13.zip
+          if-no-files-found: error
+
+      - name: Update ZIP in main
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          if git diff --quiet -- steampunk_train_foundry_v13.zip; then
+            echo 'ZIP unchanged; no commit necessary.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add steampunk_train_foundry_v13.zip
+          git commit -m 'build: refresh Foundry module ZIP [skip ci]'
+          git push origin HEAD:main

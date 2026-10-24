@@ -1,0 +1,97 @@
+{
+  "name": "Garrik Emberwheel",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/72cf3787bd1cfb77.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14
+      },
+      "hp": {
+        "value": 32,
+        "max": 32,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.5,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Chief Engineer</h2><p>Veteran engineer who knows every valve and pressure seal.</p><p><strong>Assigned carriage:</strong> Arcane Locomotive.</p><h3>Action</h3><p>Wrench Strike: +4 to hit, 1d8+2 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Chief Engineer",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Wrench Strike: +4 to hit, 1d8+2 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Garrik Emberwheel",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/72cf3787bd1cfb77.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "72cf3787bd1cfb77",
+      "carId": "locomotive",
+      "role": "Chief Engineer",
+      "npcVersion": 1
+    }
+  }
+}

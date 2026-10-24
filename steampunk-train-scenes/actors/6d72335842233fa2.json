@@ -1,0 +1,97 @@
+{
+  "name": "Freight Foreman",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/6d72335842233fa2.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 24,
+        "max": 24,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.5,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Freight Foreman</h2><p>Takes charge of manifests, tie-downs and cargo inventory.</p><p><strong>Assigned carriage:</strong> Freight and Storage Car.</p><h3>Action</h3><p>Iron Bar: +4 to hit, 1d8+2 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Freight Foreman",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Iron Bar: +4 to hit, 1d8+2 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Freight Foreman",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/6d72335842233fa2.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "6d72335842233fa2",
+      "carId": "freight",
+      "role": "Freight Foreman",
+      "npcVersion": 1
+    }
+  }
+}

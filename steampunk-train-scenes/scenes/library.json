@@ -1,0 +1,711 @@
+{
+  "_id": "db2cbf4a043313a7",
+  "name": "Steampunk Train | Library and Curiosities Car",
+  "navigation": true,
+  "navName": "Library and Curiosities Car",
+  "active": false,
+  "background": {
+    "src": "modules/steampunk-train-scenes/maps/library.webp"
+  },
+  "backgroundColor": "#272322",
+  "width": 3000,
+  "height": 1500,
+  "padding": 0,
+  "grid": {
+    "type": 1,
+    "size": 100,
+    "distance": 5,
+    "units": "ft",
+    "alpha": 0.12,
+    "color": "#4d4037",
+    "style": "solidLines",
+    "thickness": 1
+  },
+  "tokenVision": true,
+  "environment": {
+    "darknessLevel": 0.48,
+    "darknessLevelLock": true,
+    "cycle": false,
+    "globalLight": {
+      "enabled": false
+    }
+  },
+  "fog": {
+    "exploration": true
+  },
+  "initial": {
+    "x": 1500,
+    "y": 750,
+    "scale": 0.4
+  },
+  "walls": [
+    {
+      "_id": "a48d6b2c03db2cf4",
+      "c": [
+        152,
+        127,
+        2784,
+        127
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "North outer"
+        }
+      }
+    },
+    {
+      "_id": "9f86157d4a8047c7",
+      "c": [
+        152,
+        1319,
+        2784,
+        1319
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "South outer"
+        }
+      }
+    },
+    {
+      "_id": "4516056b10ffe598",
+      "c": [
+        152,
+        127,
+        152,
+        653
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Forward end top"
+        }
+      }
+    },
+    {
+      "_id": "5346f2b5a4765cb2",
+      "c": [
+        152,
+        821,
+        152,
+        1319
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Forward end bottom"
+        }
+      }
+    },
+    {
+      "_id": "58d42b77a17d31ab",
+      "c": [
+        152,
+        653,
+        152,
+        821
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Forward end connecting door"
+        }
+      }
+    },
+    {
+      "_id": "808189d6cb6b5cdc",
+      "c": [
+        2784,
+        127,
+        2784,
+        653
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Aft end top"
+        }
+      }
+    },
+    {
+      "_id": "079c66f1e443728e",
+      "c": [
+        2784,
+        821,
+        2784,
+        1319
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Aft end bottom"
+        }
+      }
+    },
+    {
+      "_id": "a2113fa0e583efe9",
+      "c": [
+        2784,
+        653,
+        2784,
+        821
+      ],
+      "move": 20,
+      "sight": 20,
+      "light": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 0,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Aft end connecting door"
+        }
+      }
+    }
+  ],
+  "lights": [
+    {
+      "_id": "11d5e66f82ad1d52",
+      "x": 350,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "816278fc9bd6176a",
+      "x": 700,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "d57cde8a406f6689",
+      "x": 1070,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "513cefa802621ea4",
+      "x": 1440,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "9c07c715b916b6c4",
+      "x": 1810,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "d6bf5bfa17068a0f",
+      "x": 2180,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "a25b569f4d69dd31",
+      "x": 2540,
+      "y": 164,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "ddd2227103a15c1d",
+      "x": 350,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "f18b0cc9457928fd",
+      "x": 700,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "fc75c5d56c26c385",
+      "x": 1070,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "4f6bc30a3ca6949c",
+      "x": 1440,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "48310797306d993a",
+      "x": 1810,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "c591967843082173",
+      "x": 2180,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    },
+    {
+      "_id": "3f290d8a6c76b1eb",
+      "x": 2540,
+      "y": 1270,
+      "rotation": 0,
+      "elevation": 0,
+      "hidden": false,
+      "walls": true,
+      "vision": false,
+      "config": {
+        "alpha": 0.19,
+        "angle": 360,
+        "attenuation": 0.47,
+        "bright": 5,
+        "dim": 20,
+        "color": "#ffbd6c",
+        "coloration": 1,
+        "contrast": 0.02,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "luminosity": 0.5,
+        "negative": false,
+        "saturation": 0.05,
+        "shadows": 0.18
+      },
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Brass lantern"
+        }
+      }
+    }
+  ],
+  "sounds": [
+    {
+      "_id": "ab1bbcb055f3be7e",
+      "path": "modules/steampunk-train-scenes/audio/moving-train-loop.ogg",
+      "repeat": true,
+      "radius": 200,
+      "easing": false,
+      "walls": false,
+      "volume": 0.11,
+      "hidden": false,
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "x": 1500,
+      "y": 750,
+      "flags": {
+        "steampunk-train-scenes": {
+          "label": "Soft rolling train ambience"
+        }
+      }
+    }
+  ],
+  "tiles": [],
+  "tokens": [],
+  "drawings": [],
+  "regions": [],
+  "notes": [],
+  "templates": [],
+  "flags": {
+    "steampunk-train-scenes": {
+      "mapId": "library",
+      "mapVersion": 2,
+      "description": "Library and Curiosities Car"
+    }
+  }
+}

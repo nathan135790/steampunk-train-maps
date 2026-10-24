@@ -1,0 +1,32 @@
+{
+  "id": "steampunk-train-scenes",
+  "title": "steampunk train carts",
+  "description": "15 interconnected steampunk railway scenes with 40 D&D 5e carriage NPCs, walls, lighting, ambient sound, and a one-click importer for actors and scenes.",
+  "version": "1.2.0",
+  "authors": [
+    {
+      "name": "Nathan Martinez"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.350"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/importer.mjs"
+  ],
+  "url": "https://github.com/nathan135790/steampunk-train-maps",
+  "manifest": "https://raw.githubusercontent.com/nathan135790/steampunk-train-maps/main/module.json",
+  "download": "https://raw.githubusercontent.com/nathan135790/steampunk-train-maps/main/steampunk_train_foundry_v13.zip"
+}

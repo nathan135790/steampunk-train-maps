@@ -1,0 +1,97 @@
+{
+  "name": "First-Class Attendant",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/0403f7cfb2e1abfc.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 13,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12
+      },
+      "hp": {
+        "value": 15,
+        "max": 15,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.125,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Personal Attendant</h2><p>Provides discreet service to wealthy sleeping-car passengers.</p><p><strong>Assigned carriage:</strong> First-Class Sleeper Car.</p><h3>Action</h3><p>Cane Strike: +2 to hit, 1d4 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Personal Attendant",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Cane Strike: +2 to hit, 1d4 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "First-Class Attendant",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/0403f7cfb2e1abfc.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "0403f7cfb2e1abfc",
+      "carId": "first-class",
+      "role": "Personal Attendant",
+      "npcVersion": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Cargo Hauler",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/22c21c6f0f5f75ea.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12
+      },
+      "hp": {
+        "value": 20,
+        "max": 20,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.25,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Cargo Handler</h2><p>Handles heavy crates and merchant freight.</p><p><strong>Assigned carriage:</strong> Freight and Storage Car.</p><h3>Action</h3><p>Cargo Hook: +4 to hit, 1d6+2 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Cargo Handler",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Cargo Hook: +4 to hit, 1d6+2 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cargo Hauler",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/22c21c6f0f5f75ea.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "22c21c6f0f5f75ea",
+      "carId": "freight",
+      "role": "Cargo Handler",
+      "npcVersion": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Tavern Bouncer",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/8ed1dadbfc123445.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14
+      },
+      "hp": {
+        "value": 28,
+        "max": 28,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.5,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Bouncer</h2><p>Keeps the games fair and the drunk passengers civil.</p><p><strong>Assigned carriage:</strong> Tavern and Games Car.</p><h3>Action</h3><p>Club: +4 to hit, 1d8+2 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Bouncer",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Club: +4 to hit, 1d8+2 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Tavern Bouncer",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/8ed1dadbfc123445.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "8ed1dadbfc123445",
+      "carId": "tavern",
+      "role": "Bouncer",
+      "npcVersion": 1
+    }
+  }
+}

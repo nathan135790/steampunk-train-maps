@@ -1,0 +1,97 @@
+{
+  "name": "Economy Passenger",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/a6b1b92b77a04a0c.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 13,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10
+      },
+      "hp": {
+        "value": 8,
+        "max": 8,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Ordinary Traveler</h2><p>A weary traveler carrying a small valise and passage ticket.</p><p><strong>Assigned carriage:</strong> Economy Passenger Car.</p><h3>Action</h3><p>Improvised Strike: +2 to hit, 1 bludgeoning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Ordinary Traveler",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Improvised Strike: +2 to hit, 1 bludgeoning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Economy Passenger",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/a6b1b92b77a04a0c.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "a6b1b92b77a04a0c",
+      "carId": "passenger",
+      "role": "Ordinary Traveler",
+      "npcVersion": 1
+    }
+  }
+}

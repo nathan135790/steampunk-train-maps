@@ -1,0 +1,282 @@
+[
+  {
+    "id": "72cf3787bd1cfb77",
+    "name": "Garrik Emberwheel",
+    "carId": "locomotive",
+    "role": "Chief Engineer",
+    "path": "actors/72cf3787bd1cfb77.json"
+  },
+  {
+    "id": "f38cfb8d74643224",
+    "name": "Bessa Coalbrand",
+    "carId": "locomotive",
+    "role": "Firebox Stoker",
+    "path": "actors/f38cfb8d74643224.json"
+  },
+  {
+    "id": "1fad182fd23a0f7f",
+    "name": "Fenn Sparkcoil",
+    "carId": "locomotive",
+    "role": "Arcane Controls Specialist",
+    "path": "actors/1fad182fd23a0f7f.json"
+  },
+  {
+    "id": "0c7215986c7873f8",
+    "name": "Ulric Stonebucket",
+    "carId": "tender",
+    "role": "Fuelmaster",
+    "path": "actors/0c7215986c7873f8.json"
+  },
+  {
+    "id": "14d542ccbad4369d",
+    "name": "Sira Vell",
+    "carId": "tender",
+    "role": "Elemental Keeper",
+    "path": "actors/14d542ccbad4369d.json"
+  },
+  {
+    "id": "af4d45a9a7ec87d4",
+    "name": "Tilly Copperspark",
+    "carId": "tender",
+    "role": "Reservoir Technician",
+    "path": "actors/af4d45a9a7ec87d4.json"
+  },
+  {
+    "id": "2b71e91e6a3dc5a5",
+    "name": "Pip Gearwhistle",
+    "carId": "maintenance",
+    "role": "Gnomish Mechanic",
+    "path": "actors/2b71e91e6a3dc5a5.json"
+  },
+  {
+    "id": "f7d16a75ec641cd4",
+    "name": "Brunna Ironweld",
+    "carId": "maintenance",
+    "role": "Battery Technician",
+    "path": "actors/f7d16a75ec641cd4.json"
+  },
+  {
+    "id": "85626f02eee81341",
+    "name": "Milo Rivet",
+    "carId": "maintenance",
+    "role": "Engineering Apprentice",
+    "path": "actors/85626f02eee81341.json"
+  },
+  {
+    "id": "dc768b997b7769dc",
+    "name": "Captain Rowan Steelhart",
+    "carId": "security",
+    "role": "Security Captain",
+    "path": "actors/dc768b997b7769dc.json"
+  },
+  {
+    "id": "a56909e16833d122",
+    "name": "Train Security Guard",
+    "carId": "security",
+    "role": "Security Guard",
+    "path": "actors/a56909e16833d122.json"
+  },
+  {
+    "id": "537ca41ee77ff52b",
+    "name": "Corporal Adra Voss",
+    "carId": "security",
+    "role": "Brig Warden",
+    "path": "actors/537ca41ee77ff52b.json"
+  },
+  {
+    "id": "a6b1b92b77a04a0c",
+    "name": "Economy Passenger",
+    "carId": "passenger",
+    "role": "Ordinary Traveler",
+    "path": "actors/a6b1b92b77a04a0c.json"
+  },
+  {
+    "id": "0c5a8d89ec2b3d1e",
+    "name": "Carriage Conductor",
+    "carId": "passenger",
+    "role": "Ticket Inspector",
+    "path": "actors/0c5a8d89ec2b3d1e.json"
+  },
+  {
+    "id": "cb6b1d6010b3ed9d",
+    "name": "Traveling Adventurer",
+    "carId": "passenger",
+    "role": "Third-Class Adventurer",
+    "path": "actors/cb6b1d6010b3ed9d.json"
+  },
+  {
+    "id": "6a277a32d1251f43",
+    "name": "Night Porter",
+    "carId": "sleeper",
+    "role": "Night Porter",
+    "path": "actors/6a277a32d1251f43.json"
+  },
+  {
+    "id": "5cf61e05fa500a8c",
+    "name": "Resting Traveler",
+    "carId": "sleeper",
+    "role": "Sleeping Traveler",
+    "path": "actors/5cf61e05fa500a8c.json"
+  },
+  {
+    "id": "ed2e3ef3e8ed40b1",
+    "name": "Sleeping Car Attendant",
+    "carId": "sleeper",
+    "role": "Sleeper Attendant",
+    "path": "actors/ed2e3ef3e8ed40b1.json"
+  },
+  {
+    "id": "3fb15e222f77bd77",
+    "name": "Merrin Tallow",
+    "carId": "market",
+    "role": "General Merchant",
+    "path": "actors/3fb15e222f77bd77.json"
+  },
+  {
+    "id": "bda095f8265f7d96",
+    "name": "Nessa Bramble",
+    "carId": "market",
+    "role": "Potion Vendor",
+    "path": "actors/bda095f8265f7d96.json"
+  },
+  {
+    "id": "fed69f064e3f4893",
+    "name": "Drogan Fivecoins",
+    "carId": "market",
+    "role": "Curios Dealer",
+    "path": "actors/fed69f064e3f4893.json"
+  },
+  {
+    "id": "b9377ad766cf2b30",
+    "name": "Chef Liora Brasspan",
+    "carId": "dining",
+    "role": "Head Chef",
+    "path": "actors/b9377ad766cf2b30.json"
+  },
+  {
+    "id": "903ce83ec15af6df",
+    "name": "Dining Steward",
+    "carId": "dining",
+    "role": "Dining Steward",
+    "path": "actors/903ce83ec15af6df.json"
+  },
+  {
+    "id": "033f38aa124e9274",
+    "name": "Galley Cook",
+    "carId": "dining",
+    "role": "Kitchen Cook",
+    "path": "actors/033f38aa124e9274.json"
+  },
+  {
+    "id": "761a9799933335bd",
+    "name": "Orin Blackmug",
+    "carId": "tavern",
+    "role": "Bartender",
+    "path": "actors/761a9799933335bd.json"
+  },
+  {
+    "id": "8ed1dadbfc123445",
+    "name": "Tavern Bouncer",
+    "carId": "tavern",
+    "role": "Bouncer",
+    "path": "actors/8ed1dadbfc123445.json"
+  },
+  {
+    "id": "b0a35ffb7ef83934",
+    "name": "Dice Dealer",
+    "carId": "tavern",
+    "role": "Card and Dice Dealer",
+    "path": "actors/b0a35ffb7ef83934.json"
+  },
+  {
+    "id": "441698f978e8e427",
+    "name": "Elandra Mossveil",
+    "carId": "botanical",
+    "role": "Botanical Keeper",
+    "path": "actors/441698f978e8e427.json"
+  },
+  {
+    "id": "ecc4b64c197716b8",
+    "name": "Iri Lumesprout",
+    "carId": "botanical",
+    "role": "Herbalist",
+    "path": "actors/ecc4b64c197716b8.json"
+  },
+  {
+    "id": "50694eee8bbe7fa6",
+    "name": "Archivist Selwyn Quill",
+    "carId": "library",
+    "role": "Head Librarian",
+    "path": "actors/50694eee8bbe7fa6.json"
+  },
+  {
+    "id": "04997ae8e4ed47f8",
+    "name": "Curator Vaelis",
+    "carId": "library",
+    "role": "Arcane Curator",
+    "path": "actors/04997ae8e4ed47f8.json"
+  },
+  {
+    "id": "90218ad3490a8ade",
+    "name": "Quiet Librarian",
+    "carId": "library",
+    "role": "Assistant Librarian",
+    "path": "actors/90218ad3490a8ade.json"
+  },
+  {
+    "id": "0403f7cfb2e1abfc",
+    "name": "First-Class Attendant",
+    "carId": "first-class",
+    "role": "Personal Attendant",
+    "path": "actors/0403f7cfb2e1abfc.json"
+  },
+  {
+    "id": "e5aaa2ca3462072b",
+    "name": "Noble Passenger",
+    "carId": "first-class",
+    "role": "Wealthy Passenger",
+    "path": "actors/e5aaa2ca3462072b.json"
+  },
+  {
+    "id": "862815a50633b5db",
+    "name": "Observation Steward",
+    "carId": "observation",
+    "role": "Lounge Steward",
+    "path": "actors/862815a50633b5db.json"
+  },
+  {
+    "id": "13d2648e987f678f",
+    "name": "Stargazer Scholar",
+    "carId": "observation",
+    "role": "Arcane Stargazer",
+    "path": "actors/13d2648e987f678f.json"
+  },
+  {
+    "id": "22c21c6f0f5f75ea",
+    "name": "Cargo Hauler",
+    "carId": "freight",
+    "role": "Cargo Handler",
+    "path": "actors/22c21c6f0f5f75ea.json"
+  },
+  {
+    "id": "6d72335842233fa2",
+    "name": "Freight Foreman",
+    "carId": "freight",
+    "role": "Freight Foreman",
+    "path": "actors/6d72335842233fa2.json"
+  },
+  {
+    "id": "f1bae298d455f577",
+    "name": "Vault Warden",
+    "carId": "vault",
+    "role": "Vault Warden",
+    "path": "actors/f1bae298d455f577.json"
+  },
+  {
+    "id": "d0d43de14efd8f34",
+    "name": "Vault Sentinel",
+    "carId": "vault",
+    "role": "Arcane Vault Sentinel",
+    "path": "actors/d0d43de14efd8f34.json"
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "name": "Curator Vaelis",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/04997ae8e4ed47f8.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 15,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13
+      },
+      "hp": {
+        "value": 33,
+        "max": 33,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 1,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Arcane Curator</h2><p>Keeps the most dangerous artifacts sealed and inventoried.</p><p><strong>Assigned carriage:</strong> Library and Curiosities Car.</p><h3>Action</h3><p>Force Pulse: DC 13 Dexterity save, 2d6 force.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Arcane Curator",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Force Pulse: DC 13 Dexterity save, 2d6 force.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Curator Vaelis",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/04997ae8e4ed47f8.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "04997ae8e4ed47f8",
+      "carId": "library",
+      "role": "Arcane Curator",
+      "npcVersion": 1
+    }
+  }
+}

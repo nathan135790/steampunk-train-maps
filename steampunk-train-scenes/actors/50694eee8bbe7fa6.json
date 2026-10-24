@@ -1,0 +1,97 @@
+{
+  "name": "Archivist Selwyn Quill",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/50694eee8bbe7fa6.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11
+      },
+      "hp": {
+        "value": 17,
+        "max": 17,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 30,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.25,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Head Librarian</h2><p>Catalogs the collection and discourages unruly visitors.</p><p><strong>Assigned carriage:</strong> Library and Curiosities Car.</p><h3>Action</h3><p>Mind Needle: DC 12 Wisdom save, 1d4 psychic.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Head Librarian",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Mind Needle: DC 12 Wisdom save, 1d4 psychic.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Archivist Selwyn Quill",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/50694eee8bbe7fa6.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "50694eee8bbe7fa6",
+      "carId": "library",
+      "role": "Head Librarian",
+      "npcVersion": 1
+    }
+  }
+}

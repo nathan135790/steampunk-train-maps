@@ -1,0 +1,97 @@
+{
+  "name": "Brunna Ironweld",
+  "type": "npc",
+  "img": "modules/steampunk-train-scenes/art/tokens/f7d16a75ec641cd4.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14
+      },
+      "hp": {
+        "value": 28,
+        "max": 28,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": ""
+      },
+      "movement": {
+        "walk": 25,
+        "units": "ft"
+      },
+      "prof": 2
+    },
+    "details": {
+      "cr": 0.5,
+      "alignment": "Unaligned",
+      "type": {
+        "value": "humanoid"
+      },
+      "biography": {
+        "value": "<h2>Battery Technician</h2><p>Dwarven custodian of the blue-glowing arcane batteries.</p><p><strong>Assigned carriage:</strong> Maintenance and Battery Car.</p><h3>Action</h3><p>Discharge Rod: +4 to hit, 1d8+2 lightning.</p><p><em>These NPCs include D&amp;D 5e statistics and readable action descriptions; review or customize their automation in your installed 5e version.</em></p>"
+      }
+    },
+    "traits": {
+      "size": "med"
+    }
+  },
+  "items": [
+    {
+      "name": "Signature Action \u2014 Battery Technician",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "description": {
+          "value": "<p>Discharge Rod: +4 to hit, 1d8+2 lightning.</p>"
+        }
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Brunna Ironweld",
+    "texture": {
+      "src": "modules/steampunk-train-scenes/art/tokens/f7d16a75ec641cd4.webp",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "displayName": 20,
+    "disposition": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1
+  },
+  "flags": {
+    "steampunk-train-scenes": {
+      "npcId": "f7d16a75ec641cd4",
+      "carId": "maintenance",
+      "role": "Battery Technician",
+      "npcVersion": 1
+    }
+  }
+}
